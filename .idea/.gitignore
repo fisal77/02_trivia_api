@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\fisal\OneDrive\Udacity_Courses\Full Stack Developer Nanodegree - DRAFT\ALL Projects before review (Starter code)\projects\02_trivia_api\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
