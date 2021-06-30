@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 
 database_name = "trivia"
-database_path = "postgres://{}/{}".format('localhost:5432', database_name)
+database_path = "postgres://{}:{}@{}/{}".format('caryn', 'caryn', 'localhost:5432', database_name)
 
 db = SQLAlchemy()
 
@@ -57,6 +57,14 @@ class Question(db.Model):
       'category': self.category,
       'difficulty': self.difficulty
     }
+
+
+# return dictionary {key: value, ...} all key-value pairs of all columns from query
+  def columns_to_dict(self):
+    dict_ = {}
+    for key in self.__mapper__.c.keys():
+      dict_[key] = getattr(self, key)
+    return dict_
 
 '''
 Category
