@@ -14,7 +14,7 @@ Developers using this project should already have Python3, pip, node, and npm in
 
 #### Frontend Dependencies
 
-This project uses NPM to manage software dependencies. NPM Relies on the package.json file located in the `frontend` directory of this repository. After cloning, open your terminal and run:
+This project uses NPM to manage software dependencies. NPM Relies on the package.json file located in the `/starter/frontend` directory of this repository. After cloning, open your terminal and run:
 
 ```bash
 npm install
@@ -22,7 +22,7 @@ npm install
 
 #### Backend Dependencies
 
-Once you have your virtual environment setup and running, install dependencies by navigating to the `/backend` directory and running:
+Once you have your virtual environment setup and running, install dependencies by navigating to the `/starter/backend` directory and running:
 
 ```bash
 pip install -r requirements.txt
@@ -40,7 +40,7 @@ npm start
 
 ## Running the Server
 
-From within the `backend` directory first ensure you are working using your created virtual environment.
+From within the `/starter/backend` directory first ensure you are working using your created virtual environment.
 
 To run the server, execute:
 
